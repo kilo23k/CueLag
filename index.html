@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CueLag｜隱私權政策</title>
+<style>
+body{max-width:760px;margin:48px auto;padding:0 22px;background:#10141e;color:#edf2fa;font:16px/1.85 system-ui,sans-serif}h1{font-size:30px}h2{font-size:21px;margin-top:32px}a{color:#a8caff}.meta{color:#b4bfd0}li{margin:.4em 0}
+</style>
+</head>
+<body>
+<h1>CueLag｜隱私權政策</h1>
+<p class="meta">開發者 kilo23k · 最後更新 2026 年 11 月 5 日</p>
+<p>本政策說明 Chrome 擴充功能「CueLag｜延遲字幕」如何處理資料。CueLag 擷取使用者選取的分頁影音，並透過 Google Gemini Live 提供翻譯字幕。</p>
+<h2>分頁影音與字幕</h2>
+<p>使用者在 Chrome 分享視窗選擇分頁並授權後，CueLag 才會擷取該分頁的畫面與音訊。影音會在本機暫時緩衝，用於延遲播放。啟用翻譯時，音訊會透過加密連線傳送至 Google Gemini。Google 回傳的翻譯資料會在播放器中顯示為字幕。</p>
+<p>目前版本沒有將錄製的影音或字幕另存為持久檔案的功能。播放期間的緩衝與字幕保留在本機執行階段，停止或關閉播放器會結束擷取與翻譯連線。</p>
+<h2>API Key 與使用偏好</h2>
+<p>使用者自行提供 Gemini API Key。CueLag 將金鑰儲存在 chrome.storage.local，並傳送給 Google，用於驗證金鑰及呼叫 Gemini API。字幕語言、字幕外觀、畫質、緩衝與相容模式等偏好也儲存在本機。儲存的金鑰會保留到被覆寫或擴充功能資料被清除。</p>
+<h2>來源網站資訊</h2>
+<p>CueLag 會讀取相符的 Weverse 與 YouTube 分頁資訊，並在支援的頁面執行隨擴充功能打包的程式與樣式，以辨識分享來源、取得影片尺寸，以及開啟或恢復純影片模式。這些來源資訊不會作為瀏覽紀錄傳送給開發者。</p>
+<h2>第三方服務</h2>
+<p>目前版本沒有開發者自建的資料接收伺服器、使用者分析或廣告追蹤功能。開發者不透過 CueLag 接收音訊、影片、字幕或 API Key。Google 會收到翻譯音訊、驗證憑證及連線所需的網路資訊，並依使用者的 API 方案和適用條款處理。</p>
+<p>請參閱 <a href="https://ai.google.dev/gemini-api/terms">Gemini API 附加服務條款</a>與 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>，了解其資料使用及保留方式。</p>
+<p>若使用者點擊 API Key 申請或支持開發等外部連結，會前往第三方網站。該網站的資料處理由其隱私權政策規範。</p>
+<h2>資料用途與控制方式</h2>
+<p>CueLag 使用上述資料提供影音播放、字幕翻譯和使用者設定。開發者不出售資料，不將資料用於廣告、信用評分或借貸判斷。</p>
+<ul>
+<li>按 CueLag 的停止按鈕、Chrome 的「停止分享」或關閉播放器，可結束新的影音擷取與傳送。</li>
+<li>在插件內儲存新的 API Key 可覆寫舊金鑰。解除安裝擴充功能可清除其本機儲存資料。</li>
+<li>要使金鑰失效，可在 Google AI Studio 撤銷或刪除金鑰。Google 已接收資料的處理依其政策辦理。</li>
+</ul>
+<h2>聯絡與政策更新</h2>
+<p>如有隱私問題，請透過本 GitHub 儲存庫的 Issues（如已開啟），或 CueLag Chrome 商店頁面所列的開發者支援管道聯絡 kilo23k。功能或資料處理方式調整時，本頁會更新並修改上方日期。</p>
+</body>
+</html>
